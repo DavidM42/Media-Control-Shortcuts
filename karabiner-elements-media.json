@@ -1,0 +1,56 @@
+{
+    "description": "Media control via command+control & arrows (down pause, directions next or rewind)",
+    "manipulators": [
+        {
+            "from": {
+                "key_code": "down_arrow",
+                "modifiers": {
+                    "mandatory": [
+                        "left_command",
+                        "left_control"
+                    ]
+                }
+            },
+            "to": [
+                {
+                    "key_code": "play_or_pause"
+                }
+            ],
+            "type": "basic"
+        },
+        {
+            "from": {
+                "key_code": "right_arrow",
+                "modifiers": {
+                    "mandatory": [
+                        "left_command",
+                        "left_control"
+                    ]
+                }
+            },
+            "to": [
+                {
+                    "key_code": "fastforward"
+                }
+            ],
+            "type": "basic"
+        },
+        {
+            "from": {
+                "key_code": "left_arrow",
+                "modifiers": {
+                    "mandatory": [
+                        "left_command",
+                        "left_control"
+                    ]
+                }
+            },
+            "to": [
+                {
+                    "key_code": "rewind"
+                }
+            ],
+            "type": "basic"
+        }
+    ]
+}
